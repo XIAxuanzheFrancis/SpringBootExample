@@ -12,11 +12,11 @@ public class DepartmentDao {
   static {
     departments = new HashMap<Integer,Department>();
 
-    departments.put(1,new Department(1,"Marketing Department"));
-    departments.put(1,new Department(2,"Purchasing Department"));
-    departments.put(1,new Department(3,"IT Department"));
-    departments.put(1,new Department(4,"Operation Department"));
-    departments.put(1,new Department(5,"Management Department"));
+    departments.put(101,new Department(101,"Marketing Department"));
+    departments.put(102,new Department(102,"Purchasing Department"));
+    departments.put(103,new Department(103,"IT Department"));
+    departments.put(104,new Department(104,"Operation Department"));
+    departments.put(105,new Department(105,"Management Department"));
   }
 
   public Collection<Department> getDepartments(){
