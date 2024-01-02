@@ -71,10 +71,10 @@
 									<td th:text="${emp.getEmail()}"></td>
 									<td th:text="${emp.getGender()==0?'F':'H'}"></td>
 									<td th:text="${emp.getDepartment()}"></td>
-									<td th:text="${#dates.format(emp.getBirth(),'yyyy-MM-dd HH:mm:ss')}"></td>
+									<td th:text="${#dates.format(emp.getBirth(),'yyyy/MM/dd HH/mm/ss')}"></td>
 									<td>
-										<button class="btn btn-sm btn-primary">modifier</button>
-										<button class="btn btn-sm btn-danger">Delete</button>
+										<a class="btn btn-sm btn-primary" th:href="@{/emp/}+${emp.getId()}">modify</a>
+										<a class="btn btn-sm btn-danger" th:href="@{/delemp/}+${emp.getId()}">Delete</a>
 									</td>
 								</tr>
 							</tbody>
